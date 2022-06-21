@@ -21,3 +21,4 @@ configured) only without nginx.
 • A docker-network that establishes the connection between your containers.
 Your containers have to restart in case of a crash.
 
+<img src="https://github.com/ayoubkamli/inception/blob/main/Capture.PNG?raw=true" width="128"/>
