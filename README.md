@@ -29,6 +29,8 @@ docker build --tag deb:0.1 .
 ```
 build the image with tag deb:0.1
 and use this command to run the container
-```docker run -it --name ng -d -p 80:80 -p 443:443 --env-file .env deb:0.1```
+```
+docker run -it --name ng -d -p 80:80 -p 443:443 --env-file .env deb:0.1
+```
 ng is the name of the container
 and use the the .env to use the envirment variables and the image we already built.
