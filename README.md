@@ -24,12 +24,12 @@ Your containers have to restart in case of a crash.
 <img src="https://github.com/ayoubkamli/inception/blob/main/Capture.PNG?raw=true" width="1028"/>
 
 Use this command to build the image from docker file
-```ruby
+```docker
 docker build --tag deb:0.1 .
 ```
 build the image with tag deb:0.1
 and use this command to run the container
-```
+```docker
 docker run -it --name ng -d -p 80:80 -p 443:443 --env-file .env deb:0.1
 ```
 ng is the name of the container
