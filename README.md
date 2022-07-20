@@ -24,9 +24,9 @@ Your containers have to restart in case of a crash.
 <img src="https://github.com/ayoubkamli/inception/blob/main/Capture.PNG?raw=true" width="1028"/>
 
 Use this command to build the image from docker file
-docker build --tag deb:0.1 .
+'''docker build --tag deb:0.1 .'''
 build the image with tag deb:0.1
-qnd use this command to run the container
-docker run -it --name ng -d -p 80:80 -p 443:443 --env-file .env deb:0.1
+and use this command to run the container
+'''docker run -it --name ng -d -p 80:80 -p 443:443 --env-file .env deb:0.1'''
 ng is the name of the container
 and use the the .env to use the envirment variables and the image we already built.
