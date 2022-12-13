@@ -16,5 +16,6 @@ RUN tar -zxvf latest.tar.gz
 RUN mkdir /var/www/html/akamli.42.fr
 RUN mv wordpress/* /var/www/html/akamli.42.fr/
 RUN chown -R www-data:www-data /var/www/html/akamli.42.fr/
+EXPOSE 9000
 
 CMD ["php-fpm"]
