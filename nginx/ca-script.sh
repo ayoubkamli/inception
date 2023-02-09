@@ -11,11 +11,13 @@ openssl req -newkey rsa:4096 -days 365 -nodes -x509 \
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.back
 echo "copy nginx conf"
 echo $?
+ls -l
 mv ./default.conf /etc/nginx/nginx.conf
 echo "replace nginx conf"
 echo $?
 
 service nginx reload
+echo $?
 /usr/sbin/nginx -g "daemon off;"
 
 exec $@
